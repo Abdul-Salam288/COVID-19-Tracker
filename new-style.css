@@ -1,0 +1,382 @@
+body {
+    background-color: #F5F6FA;
+}
+
+.main {
+    min-height: 100vh;
+    max-width: 1280px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.map-container .col {
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 12px;
+}
+
+.map-container-inside {
+    height: 530px;
+    padding-bottom: 15px;
+}
+
+.map-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.map-header h6 {
+    align-self: center;
+}
+
+.map-header h3, .map-header h6 {
+    color: #695d5c;
+    font-weight: 500;
+}
+
+#map {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.chart-container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.chart-container .col, .chart-container .horizontal-chart {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 8px -4px rgba(0,0,0,0.5)
+}
+
+.linear-chart, .pie-chart, .horizontal-chart {
+    height: 300px;
+    width: 300px;
+}
+
+.title-container h2 {
+    color: #fc3c3c;
+    margin-bottom: 0;
+}
+
+.title-container h4 {
+    text-transform: uppercase;
+    color: #CACBCF;
+}
+
+.title-container {
+    display: flex;
+}
+
+.title-container img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+.stats-container .card {    
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 8px -4px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.stats-container .card-body {
+    padding: 1rem;
+}
+
+.stats-container .card-title {
+    color: #695d5c;
+    font-weight: 400;
+}
+
+.stats-container .card-subtitle {
+    font-weight: 600;
+}
+
+.cases-total, .active-total, .recovered-total, .deaths-total {
+    font-size: 0.8rem;
+}
+
+.side-panel-container {
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 0 0 8px -4px rgba(0,0,0,0.5);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.total-number {
+    color: #cc1034;
+}
+
+
+.recovered-number {
+    color: #7fd922;
+}
+
+.deaths-number {
+    color: #fa5575;
+}
+
+#tracker {
+    color: black;
+}
+
+/* card hover and active state*/
+
+.tab-selection {
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    opacity: 0;
+}
+
+.card:hover > .tab-selection {
+    opacity: 1;
+}
+
+.card.active > .tab-selection {
+    opacity: 1;
+}
+
+.cases .tab-selection {
+    background-color: #cc1034;
+}
+
+.recovered .tab-selection {
+    background-color: #7fd922;
+}
+
+.deaths .tab-selection {
+    background-color: #fa5575;
+}
+
+/* HW-4 Adding Table */
+
+.table-row-data img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.cases-table-container h4, .corona-news h4 {
+    color: #645D5D;
+    font-weight: 400;
+    text-align: center;
+}
+
+.corona-news h4 {
+    margin-bottom: 17px;
+}
+
+.table-active-cases, .table-row-data {
+    color: #645D5D;
+}
+
+.table td {
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.country-data::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.country-data::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+.country-data::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+/* News CSS */
+
+.corona-news img {
+    height: 150px;
+    width: 200px;
+    opacity: 1;
+}
+
+/* dropdown CSS*/
+
+.ui.dropdown .menu>.item>.image, .ui.dropdown .menu>.item>img, .ui.dropdown>.text>.image, .ui.dropdown>.text>img {
+    margin-top: 0.3em;
+    height: 10px;
+}
+
+.ui.dropdown .menu>.item>.i, .ui.dropdown .menu>.item>i, .ui.dropdown>.text>.i, .ui.dropdown>.text>i {
+    margin-right: 12px;
+}
+
+/* Covid Alert info CSS*/
+
+.covid-alert {
+    margin-top: 15px;
+    margin-left: 15px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.covid-alert h3 {
+    text-align: center;
+    width: 250px;
+    background-color: #d24040;
+    border-radius: 5px;
+    color: white;
+}
+
+.covid-alert {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.covid-content {
+    display: flex;
+}
+
+.symptoms {
+    margin-bottom: 0;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    width: 80px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.covid-prevention {
+    text-align: center;
+}
+
+#order-list {
+    width: 30%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-cont {
+    font-weight: 600;
+}
+
+.covid-card-images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#fever {
+    margin-left: 15px;
+}
+
+.covid-symptoms, .covid-prevention-treatments {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.covid-symptoms-card, .covid-prevention {
+    border: 1px solid white;
+}
+
+.covid-button {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.published-date {
+    color: #645D5D;
+    font-weight: 400;
+    text-align: center;
+}
+
+.carousel-indicators .active {
+    background-color: blue;
+}
+
+.carousel-indicators li {
+    background-color: #645D5D;
+}
+
+.carousel-item {
+    height: 300px;
+}
+
+.card-news {
+    height: 300px;
+}
+
+.news-title {
+    text-align: center;
+}
+
+.corona-news h4 {
+    color: #645D5D;
+    font-weight: 600;
+    text-align: center;
+}
+
+.carousel-item {
+    box-shadow: 0 0 8px -4px rgba(0,0,0,0.5);   
+}
+
+.info-recovered, .info-confirmed, .info-deaths {
+    font-weight: 400;
+    color: #695d5c;
+}
+
+
+/* horizontal bar test */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+#chart {
+  max-width: 650px;
+  margin: 35px auto;
+}
+
+.horizonalbar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.horizonalbar h6 {
+    font-weight: 400;
+    color: #695d5c;
+}
+
+.horizonalbar .horizontal-country {
+    border-bottom: 1px solid black;
+    background-color: #CACBCF;
+}
+
+#chart {
+    margin: 25px auto;
+}
