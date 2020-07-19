@@ -125,7 +125,7 @@ const buildHorizontalchart = (data) => {
     //     }
     //   },
       title: {
-            text: "Top Cuntries with Today's New Cases",
+            text: "Top Countries with Today's New Cases",
             align: 'centre',
             margin: 0,
             offsetX: 0,
