@@ -17,8 +17,8 @@ const buildChartData = (data) => {
 const buildChart = (chartData, type="cases") => {
     var timeFormat = 'MM/DD/YY';
     chart_color = {
-        'cases': ['Daily Confirmed New Cases', ['rgba(204, 16, 52, 0.5)', 'rgba(204, 16, 52, 0.1)', 'rgba(204, 16, 52, 0.07)', 'rgba(204, 16, 52, 0)'], '#cc1034'],
-        'recovered': ['Daily Recovered New Cases', ['rgba(127, 217, 34, 0.5)', 'rgba(127, 217, 34, 0.1)', 'rgba(127, 217, 34, 0.07)', 'rgba(127, 217, 34, 0)'], '#7fd922'],
+        'cases': ['Daily New Confirmed Cases', ['rgba(204, 16, 52, 0.5)', 'rgba(204, 16, 52, 0.1)', 'rgba(204, 16, 52, 0.07)', 'rgba(204, 16, 52, 0)'], '#cc1034'],
+        'recovered': ['Daily New Recovered Cases', ['rgba(127, 217, 34, 0.5)', 'rgba(127, 217, 34, 0.1)', 'rgba(127, 217, 34, 0.07)', 'rgba(127, 217, 34, 0)'], '#7fd922'],
         'deaths': ['Daily New Deaths', ['rgba(250, 85, 117, 0.5)', 'rgba(250, 85, 117, 0.1)', 'rgba(250, 85, 117, 0.07)', 'rgba(250, 85, 117, 0)'], '#fa5575']
     }
 
@@ -86,7 +86,6 @@ const buildChart = (chartData, type="cases") => {
         }
     });
 }
-
 
 const buildHorizontalchart = (data) => {
     dailynewcases = [];

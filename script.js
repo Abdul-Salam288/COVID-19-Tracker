@@ -45,7 +45,6 @@ const changeDataSelection = (cardElem, casesType) => {
     
     let chartData = buildChartData(coronaHistoricalData[casesType]);
     buildChart(chartData, casesType);
-    
 }
 
 /* HW-2 Added active effect on TABS */
